@@ -7,6 +7,9 @@ import {
   Route,
   useLocation
 } from 'react-router-dom';
+import About from './pages/About';
+import Plants from './pages/Plants';
+import Contacts from './pages/Contacts';
 
 function App() {
 
@@ -24,6 +27,9 @@ function App() {
     <>
      <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/plants" element={<Plants />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </>
   )
